@@ -105,6 +105,15 @@
 		font-size: 48px;
 	}
 
+	.oak-image {
+		visibility: hidden;
+		position: absolute;
+		top: 0px;
+		left: 0;
+		height: 750px;
+		width: 1650px;
+	}
+
 	.text-info {
 		box-sizing: border-box;
 		margin-left: 60%;
@@ -112,8 +121,8 @@
 		width: 400px;
 		padding: 50px 20px 20px 20px;
 
-		background-color: #ffffff;
-		opacity: 0.55;
+		background-color: rgba(255, 255, 255, 0.5);
+		opacity: 1;
 	}
 	
 	.text-info p {
@@ -123,6 +132,16 @@
 		text-align: center;
 
 		text-shadow: 2px 2px 7px rgba(0,0,0,0.44);
+	}
+
+	.oak-decor {
+		margin: auto;
+		height: 65px;
+		width: 65px;
+		background-image: url("../images/1.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
 	}
 
 	.text-info p::first-letter {
@@ -138,3 +157,102 @@
 
 		border-bottom: 2px solid #0b2626;
 	}
+
+	/*----Fern Section----*/
+	.fern-section {
+		position: relative;
+		height: 750px;
+		width: 100%;
+		margin-top: 250px;
+		box-sizing: border-box;
+		background-color: #0b2626;
+		font-family: Gilroy-Light;
+	}
+
+	.fern-section::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 1050px;
+		height: 100%;
+		width: 100%;
+		background-image: url("../images/fern_photo.png");
+		background-position-x: -130px;
+		opacity: 0.05;
+		z-index: 0;
+	}
+
+	.fern-info {
+		padding: 50px;
+	}
+
+	.fern-head {
+		position: absolute;
+		top: 65px;
+		left: 450px;
+		z-index: 2;
+	}
+
+	.fern-head h2 {
+		font-family: Gilroy-Light;
+		color: #ffffff;
+		font-size: 48px;
+	}
+
+	.fern-info .text-info {
+		box-sizing: border-box;
+		margin-left: 130%;
+		height: 600px;
+		width: 400px;
+		padding: 50px 20px 20px 20px;
+
+		background-color: rgba(255, 255, 255, 0.5);
+		opacity: 0.8;
+	}
+
+	.fern-info .text-info p {
+		color: #ffffff;
+		z-index: 2;
+	}
+
+	.fern-content {
+		height: 720px;
+		width: 1050px;
+
+		-webkit-box-shadow: 18px 4px 40px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 18px 4px 40px 0px rgba(0,0,0,0.75);
+		box-shadow: 18px 4px 40px 0px rgba(0,0,0,0.75);
+	}
+
+	.fern-image {
+		position: absolute;
+		top: -30px;
+		left: 0;
+		height: 750px;
+		width: 1050px;
+	}
+
+	.fern-info::before {
+		content: "";
+		display: block;
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		top: 48px;
+		right: 0px;
+		border-bottom: 2px solid #e2cdb3;
+		z-index: 2;
+	}
+
+	.fern-decor {
+		margin: auto;
+		height: 65px;
+		width: 65px;
+		background-image: url("../images/1.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	/*----Gallery Section----*/
