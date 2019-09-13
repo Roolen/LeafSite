@@ -174,7 +174,7 @@
 		display: block;
 		position: absolute;
 		top: 0;
-		left: 1050px;
+		left: 0;
 		height: 100%;
 		width: 100%;
 		background-image: url("../images/fern_photo.png");
@@ -256,3 +256,79 @@
 	}
 
 	/*----Gallery Section----*/
+	.gallery-section {
+		position: relative;
+		height: 980px;
+		width: 100%;
+		margin-top: 250px;
+		box-sizing: border-box;
+		background-color: #f0e6d8;
+		font-family: Gilroy-Light;
+	}
+
+	.gallery-content {
+		display: -webkit-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		width: 1830px;
+	}
+
+	.gallery-info {
+		box-sizing: border-box;
+		height: 545px;
+		width: 510px;
+		padding: 100px 60px 10px 60px;
+
+		font-family: Gilroy-Light;
+		color: #ffffff;
+		font-size: 20px;
+		text-align: center;
+		line-height: 25px;
+		background-color: #0b2626;
+	}
+
+	.gallery-text p::first-letter {
+		font-size: 32px;
+	}
+
+	.gallery-content img {
+		margin: 5px 10px 5px 10px;
+	}
+
+	.gallery-content img:nth-child(2) {
+		height: 540px;
+		width: 620px;
+	}
+
+	.gallery-content img:nth-child(3) {
+		height: 540px;
+		width: 640px;
+	}
+
+	.gallery-content img:nth-child(4) {
+		height: 420px;
+		width: 650px;
+	}
+
+	.gallery-content img:nth-child(5) {
+		height: 420px;
+		width: 620px;
+	}
+
+	.gallery-content img:nth-child(6) {
+		height: 420px;
+		width: 480px;
+	}
+
+	.gallery-info::before {
+		content: "";
+		display: block;
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		top: 80px;
+		right: 0px;
+		border-bottom: 2px solid #e2cdb3;
+		z-index: 2;
+	}
